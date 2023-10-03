@@ -1,3 +1,4 @@
+console.info('loading const.js');
 // a local copy of the file for local development for local people
 // (i.e. me)
 // we generate the deployed version of this file from the terraform

@@ -1,3 +1,5 @@
+console.info('loading custom.js');
+
 document.addEventListener('DOMContentLoaded', function () {
   tippy('.tippy-tip', {
     allowHTML: true,

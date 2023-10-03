@@ -1,3 +1,4 @@
+console.info('loading script.js');
 const API_KEY = 'plTBNe7lT95DmuPMyBm2w8bK4cMbwIQk4ci547Kc';
 
 Dropzone.options.customScript = {

@@ -47,7 +47,7 @@ Dropzone.options.customScript = {
       // hide .dz-size
       const dzsize = file.previewElement.querySelector('.dz-size');
       dzsize.innerHTML =
-        '<span data-dz-size><img src="images/download.png" width="16" height="16"></span>';
+        '<span data-dz-size><img src="/assets/img/download.png" width="16" height="16"></span>';
     });
 
     this.on('error', (file, message, xhr) => {

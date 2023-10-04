@@ -13,7 +13,6 @@
   const API_GATEWAY_URL =
     '{{ site.env.JEKYLL_API_GATEWAY_URL}}' || 'ENV_VAR_MISSING';
   console.info('API_GATEWAY_URL', API_GATEWAY_URL);
-  //const API_KEY = 'plTBNe7lT95DmuPMyBm2w8bK4cMbwIQk4ci547Kc';
   const API_KEY = '{{ site.env.JEKYLL_API_KEY }}' || 'ENV_VAR_MISSING';
   console.info('API_KEY', API_KEY);
   // if API_KEY or API_GATEWAY_URL is 'ENV_VAR_MISSING' then make envVarWarning visible

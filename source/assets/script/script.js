@@ -1,5 +1,4 @@
-console.info('loading script.js');
-const API_KEY = 'plTBNe7lT95DmuPMyBm2w8bK4cMbwIQk4ci547Kc';
+console.debug('loading script.js');
 
 Dropzone.options.customScript = {
   url: API_GATEWAY_URL + '/render',

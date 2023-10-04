@@ -6,12 +6,13 @@ cover: false
 
 <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
 
-<script src="/assets/script/const.js"></script>
 <script src="/assets/script/custom.js"></script>
 
 <script defer src="/assets/script/script.js"></script>
 <script defer src="https://unpkg.com/@popperjs/core@2"></script>
 <script defer src="https://unpkg.com/tippy.js@6"></script>
+
+{% include config-with-checks.html %}
 
 <div class="container">
   <div class="article">

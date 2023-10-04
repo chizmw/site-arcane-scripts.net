@@ -1,0 +1,35 @@
+<!-- jekyll hack to set constants from environment variables -->
+<div
+  class="alert alert-danger"
+  role="alert"
+  style="display: none"
+  id="envVarWarning"
+>
+  One or more configuration variables is missing or incorrectly configured. This
+  page will not function correctly until this is resolved.
+  <ul id="badVars"></ul>
+</div>
+<script>
+  const API_GATEWAY_URL =
+    '{{ site.env.JEKYLL_API_GATEWAY_URL}}' || 'ENV_VAR_MISSING';
+  console.info('API_GATEWAY_URL', API_GATEWAY_URL);
+  //const API_KEY = 'plTBNe7lT95DmuPMyBm2w8bK4cMbwIQk4ci547Kc';
+  const API_KEY = '{{ site.env.JEKYLL_API_KEY }}' || 'ENV_VAR_MISSING';
+  console.info('API_KEY', API_KEY);
+  // if API_KEY or API_GATEWAY_URL is 'ENV_VAR_MISSING' then make envVarWarning visible
+  // Check if either API_KEY or API_GATEWAY_URL is 'ENV_VAR_MISSING'
+  const envVars = { API_KEY, API_GATEWAY_URL };
+  for (const [key, value] of Object.entries(envVars)) {
+    if (value === 'ENV_VAR_MISSING') {
+      console.error(
+        `Missing or incorrectly configured environment variable: ${key}`
+      );
+      document.getElementById('envVarWarning').style.display = 'block';
+      const badVarsList = document.getElementById('badVars');
+      const badVarItem = document.createElement('li');
+      badVarItem.textContent = key;
+      badVarsList.appendChild(badVarItem);
+    }
+  }
+</script>
+<!-- end of hack -->

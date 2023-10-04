@@ -1,4 +1,4 @@
-console.info('loading custom.js');
+console.debug('loading custom.js');
 
 document.addEventListener('DOMContentLoaded', function () {
   tippy('.tippy-tip', {

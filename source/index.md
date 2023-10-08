@@ -14,6 +14,15 @@ cover: false
 
 {% include config-with-checks.html %}
 
+<div
+  class="alert alert-info"
+  role="alert"
+  id="userWarning"
+>
+This site is being rearchitected behind the scenes. Apologies for any unexpected
+behaviour or downtime.
+</div>
+
 <div class="container">
   <div class="article">
     <div>

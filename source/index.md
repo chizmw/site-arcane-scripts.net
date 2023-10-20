@@ -23,6 +23,8 @@ This site is being rearchitected behind the scenes. Apologies for any unexpected
 behaviour or downtime.
 </div>
 
+<div class="alert alert-danger">I've broken the API call somehow (CORS is back baby!) - under investigation</div>
+
 <div class="container">
   <div class="article">
     <div>
